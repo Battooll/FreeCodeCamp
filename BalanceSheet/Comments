@@ -1,0 +1,27 @@
+/*The CSS clip property is used to define the visible portions
+of an element. Set the span[class~="sr-only"] selector to have a clip property of rect(1px, 1px, 1px, 1px).
+
+The clip-path property determines the shape the clip property should take. Set the clip-path property to the
+value of inset(50%), forming the clip-path into a rectangle within the element.
+
+Finally, you need to take these hidden elements out of the document flow. Give the span[class~="sr-only"] 
+selector a position property set to absolute, a padding property set to 0, and a margin property set to -1px.
+This will ensure that not only are they no longer visible, but they are not even within the page view.*/
+
+
+
+/* The calc() function is a CSS function that allows you to calculate a value based on other values. 
+For example, you can use it to calculate the width of the viewport minus the margin of an element:
+.example {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+Give #years a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0. */
+
+
+/* Adding position sticky moved the element into its own stack. 
+To ensure your #years element does not get hidden by different stacks, add a z-index property set to 999 in the #years rule.*/
+
+/* Create a table selector to target your tables. Set the border-collapse property to collapse, 
+which will allow cell borders to collapse into a single border, instead of a border around each cell. 
+Also set the border property to 0 to hide the borders themselves.*/
