@@ -1,0 +1,37 @@
+/* Variable declarations begin with two dashes (-) and are given a name and a value like this:
+ --variable-name: value;. In the rule for the bb1 class, create a variable named --building-color1 and give it a value of #999.
+ To use a variable, put the variable name in parentheses with var in front of them like this: 
+ var(--variable-name). Whatever value you gave the variable will be applied to whatever property you use it on.
+
+Add the variable --building-color1 you created in the previous step as the value of the background-color property of the .bb1a class.*/
+
+
+
+/*variables are often declared in the :root selector. This is the highest level selector in CSS; putting your variables there will make them usable everywhere. 
+Add the :root selector to the top of your stylesheet, and move all your variable declarations there.*/
+
+
+
+
+/*Gradients in CSS are a way to transition between colors across the distance of an element. 
+They are applied to the background property and the syntax looks like this:
+
+gradient-type(
+  color1,
+  color2
+);
+In the example, color1 is solid at the top, color2 is solid at the bottom, and in between it transitions evenly from one to the next. In .bb1a, add a background property below the background-color property. 
+Set it as a gradient of type linear-gradient that uses --building-color1 as the first color and --window-color1 as the second.*/
+
+/*You can see the hard color change at the top of the section. Change the gradient type from linear-gradient to repeating-linear-gradient for 
+this section. This will make the four colors of your gradient repeat until it gets to the bottom of the element; giving you some stripes, 
+and saving you from having to add a bunch of elements to create them.
+
+background: repeating-linear-gradient(
+      var(--building-color2),
+      var(--building-color2) 6%,
+      var(--window-color2) 6%,
+      var(--window-color2) 9%
+    );
+    */
+  
